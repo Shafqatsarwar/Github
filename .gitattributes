@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+"use strict";
+var author = { firstname: "Shafqat", lastname: "Sarwar",
+    address: { city: "Lahore", country: "Pakistan", },
+};
+var mybook = { author: { firstname: "Zia", lastname: "khan",
+        address: { city: "Karachi", country: "Pakistan", },
+    },
+    name: "my best Book", };
+var mybook2 = { author: "Azlan", name: "my best Book", };
+console.log("my Book name:", mybook.name);
+console.log("my book Author name:".concat(mybook.author.firstname, "\n").concat(mybook.author.lastname));
+console.log("Author city:", mybook.author.address.city);
+console.log("from:", mybook.author.address.city, mybook.author.address.country);
